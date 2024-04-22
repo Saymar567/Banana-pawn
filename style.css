@@ -3,3 +3,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 40px;
+padding-left: 20px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.square{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+}
+.square.light {
+        background-color: #b9a524;
+}
+.square.dark {
+    background-color: #104604;
+}
+.piece {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+.bananas {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+
+}
+.minion {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
