@@ -5,12 +5,25 @@
 }
 
 #title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-size: 40px;
 padding-left: 20px;
+}
+.thetitle {
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+#lives {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#score {
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 #board {
