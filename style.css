@@ -2,8 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
+#dos-fondo {
+    background-image: url("./images/platanitos.png");
+    background-size: cover;
+
+}
+#startButton {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 60%;
+    left: 42.5%;
+    padding: 16px;
+    max-width: 204px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5%;
+    font-family: Helvetica;
+    font-size: 16px;
+}
 #title {
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-size: 40px;
@@ -14,6 +33,10 @@ display: flex;
 justify-content: center;
 align-items: center;
 
+}
+
+.non-displayed {
+    display: none;
 }
 #lives {
     display: flex;
@@ -28,13 +51,16 @@ align-items: center;
 
 #board {
     display: grid;
-    grid-template-columns: repeat(8, 50px);
-    grid-template-rows: repeat(8, 50px);
+    grid-template-columns: repeat(8, 48px);
+    grid-template-rows: repeat(8, 48px);
     padding-left: 20px;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 10px;
+    box-shadow: 10px 5px 5px black;
+    
 }
+
 .square{
     width: 50px;
     height: 50px;
@@ -67,4 +93,25 @@ align-items: center;
     align-items: center;
     width: 40px;
     height: 40px;
+}
+#button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans';
+    
+}
+#gameOver {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 60%;
+    left: 42.5%;
+    padding: 16px;
+    max-width: 204px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5%;
+    font-family: Helvetica;
+    font-size: 16px;
 }

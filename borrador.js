@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
             currentSquareIndex += 1;
         }
         squares[currentSquareIndex].appendChild(pawnImage);
-    }
+    
 
     document.addEventListener("keydown", function(event) {
         switch (event.key) {
@@ -34,4 +34,5 @@ document.addEventListener("DOMContentLoaded", function () {
                 break
         }
     })
+}
 })
