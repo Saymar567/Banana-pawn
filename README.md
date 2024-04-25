@@ -6,7 +6,10 @@ Be careful, though, because there are minions over there that want to bananas to
 ## How it works
 - Create the chess-board
 - Create the pawn
-- Create the minions
+- Create the minions and make them appear in the chessboard randomly
 - Create the movements of pawn
-- Create the bananas and make them appear in the chessboard
+- Create the bananas and make them appear in the chessboard randomly
 - Store the points
+- Store the lives
+- When you get to 0 lives, you lose
+-
