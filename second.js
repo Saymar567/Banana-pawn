@@ -93,7 +93,7 @@ function startGame() {
 
                 scoreLives.innerText = lives;
                 console.log(lives)
-                if (lives === 0) {
+                if (lives <= 0) {
                     const restartButton = document.querySelector("#gameOver");
                     restartButton.style.display = "block";
                     let minionAudio = document.querySelector("#audio");
@@ -107,7 +107,13 @@ function startGame() {
                 lives -= 2;
 
                 scoreLives.innerText = lives;
-
+                if (lives <= 0) {
+                    const restartButton = document.querySelector("#gameOver");
+                    restartButton.style.display = "block";
+                    let minionAudio = document.querySelector("#audio");
+                    minionAudio.play();
+                    boardErase.remove();
+                }
 
             } else if (this.pawnImage.parentNode.childNodes[0].classList[0] === 'super-banana') {
                 this.pawnImage.parentNode.childNodes[0].remove();
