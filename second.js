@@ -73,10 +73,10 @@ function startGame() {
                 } else if (score % 50 === 0) {
                     setInterval(randomNewMinion, 2000)
                 }
-                else if (score % 100 === 0) {
+                /*else if (score % 100 === 0) {
                     setInterval(randomSuperBanana, 1000)
-                }
-                else if (score % 1000 === 0) {
+                }*/
+                else if (score % 200 === 0) {
                     let bestAudio = document.querySelector("#best-audio")
                     bestAudio.play()
                 } else {
